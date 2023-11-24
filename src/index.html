@@ -9,7 +9,6 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" href="./style.css" />
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Ph Tube</title>
   </head>
@@ -38,9 +37,7 @@
             </button>
           </div>
           <div>
-            <button
-              class="sort-button text-white bg-[#FF1F3D] py-2 px-5 font-medium capitalize rounded"
-            >
+            <button class="sort-button default-btn bg-[#FF1F3D] text-white">
               Blog
             </button>
           </div>
@@ -49,12 +46,17 @@
       <!-- Category -->
       <section
         id="category-section"
-        class="lg:max-w-7xl max-w-full py-5 lg:mx-auto mx-2"
+        class="lg:max-w-7xl max-w-full py-5 lg:mx-auto mx-2 flex justify-center"
       >
-        <div class="cate-list">
-          <button class="default-btn cate-btn">All</button>
+        <div class="cate-container flex justify-between flex-wrap gap-5">
+          <button class="default-btn cate-btn py-[6px]">All</button>
+          <button class="default-btn cate-btn py-[6px]">Music</button>
+          <button class="default-btn cate-btn py-[6px]">Comedy</button>
+          <button class="default-btn cate-btn py-[6px]">Drawing</button>
         </div>
       </section>
+      <!-- Video Section -->
+      <section id="video-section"></section>
     </main>
     <script src="./app.js"></script>
   </body>

@@ -124,14 +124,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"PHero-Tube@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "PHero-Tube@workspace:."
-  dependencies:
-    tailwindcss: "npm:^3.3.5"
-  languageName: unknown
-  linkType: soft
-
 "abbrev@npm:^2.0.0":
   version: 2.0.0
   resolution: "abbrev@npm:2.0.0"
@@ -1079,6 +1071,14 @@ __metadata:
   checksum: e5dc78a7348d25eec61ab166317e9e9c7b46818aa2c2b9006c507a6ff48c672d011292d9662527213e558f5652ce0afcc788663a061d8b59ab495681840c0c1e
   languageName: node
   linkType: hard
+
+"phero-tube@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "phero-tube@workspace:."
+  dependencies:
+    tailwindcss: "npm:^3.3.5"
+  languageName: unknown
+  linkType: soft
 
 "picocolors@npm:^1.0.0":
   version: 1.0.0
