@@ -3,12 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ph Tube</title>
-
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.6/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Ph Tube</title>
   </head>
   <body>
-    <h1 class="text-4xl">Hello</h1>
+    <main>
+      <!-- Header -->
+      <header
+        class="lg:max-w-7xl max-w-full py-5 lg:mx-auto mx-2 border-b border-[#17171733]"
+      >
+        <nav
+          class="flex flex-col md:flex-row lg:flex-row lg:justify-between md:justify-between justify-center items-center gap-y-2"
+        >
+          <div class="logo">
+            <img
+              class="flex-shrink-0"
+              loading="lazy"
+              src="./imgs/Logo.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <button
+              class="sort-button bg-[#25252533] py-2 px-5 font-medium capitalize rounded"
+            >
+              sort by view
+            </button>
+          </div>
+          <div>
+            <button
+              class="sort-button text-white bg-[#FF1F3D] py-2 px-5 font-medium capitalize rounded"
+            >
+              Blog
+            </button>
+          </div>
+        </nav>
+      </header>
+    </main>
     <script src="./app.js"></script>
   </body>
 </html>
