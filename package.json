@@ -1,0 +1,9 @@
+{
+  "name": "phero-tube",
+  "scripts": {
+    "build-style": "npx tailwindcss -i ./src/style.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
