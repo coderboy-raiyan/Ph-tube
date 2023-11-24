@@ -9,7 +9,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="output.css" rel="stylesheet" />
     <title>Ph Tube</title>
   </head>
   <body>
@@ -46,7 +46,7 @@
       <!-- Category -->
       <section
         id="category-section"
-        class="lg:max-w-7xl max-w-full py-5 lg:mx-auto mx-2 flex justify-center"
+        class="lg:max-w-7xl max-w-full py-5 lg:mx-auto mx-2 mb-6 flex justify-center"
       >
         <div class="cate-container flex justify-between flex-wrap gap-5">
           <button class="default-btn cate-btn py-[6px]">All</button>
@@ -56,7 +56,50 @@
         </div>
       </section>
       <!-- Video Section -->
-      <section id="video-section"></section>
+      <section id="video-section">
+        <div
+          class="content-area grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-6 lg:max-w-7xl max-w-full lg:mx-auto mx-2"
+        >
+          <!-- Single card -->
+          <div class="video-card">
+            <img
+              class="rounded-xl"
+              src="https://s3-alpha-sig.figma.com/img/1f25/99e4/d72ed80d0c125cb4d7fdda46f2bb42c0?Expires=1701648000&Signature=Me-PObwOoZCUrisy4WJn8x6lRwBhWsknaVJxuXWGhI0TL0QWFJ-x8JRkbvTBANkWYYJtJq15j0ufE0RIy4gb8ooy7TTa8n0piOJdbsIyl2OFv3bA6HjchJfqcTugstNa3RrzcDymU4eykdiT7AZo20MVAVLpGLx~NW-9WbHw0GQ6125nTZE95fJm5zB5~tJCuz9Ftg3Nop5b~P1O1oLGmYz4S~Gyjr63H0NeDH7vVZAB2CxCAmngR6xYgWznoDpdc4auUy1TMR~GtxJssMmURSRNoC0il74w6M8IsvJreGKHapU2kyQEatrRj-sAC2yLcSXNbL1KuFPHDDFYXe3a0g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt=""
+            />
+
+            <div class="video-info flex gap-x-4 my-2">
+              <div class="w-14 h-14">
+                <img
+                  loading="lazy"
+                  class="profile-img rounded-[40px]"
+                  src="https://s3-alpha-sig.figma.com/img/2983/00c3/f7c8a8ca2f16c4cbfd746902cb0f8d57?Expires=1701648000&Signature=phLcI-52eh8uzzoxBhQ~nUnVsjeW67jiQR4JmjsAbNYfOWXkHwKQHonbbKFGz3x9zzsi8Mz5snAVJ~6Xh733X6xb9T1tbVQnRd7slDUi~HM4LipUatzMY3YrCFQAdbOG8lUBqHMo6L5kSPJEtLPI3fOO-A5AnTVfp5eJZUjjZn5mRrc6HY1w-oLyuIdwlLdFvqOyBXIJiMsZD~yiUTXgmo~JBZQ7OiPGWGShvgPxV8ij-sHUKM4AFU-RBKiZiOCVcNsaIaD~3QqxLihlIkWSt11uOZne0uUyAQg1EALDJn1jgHyyiNiDA5LnXXqBP1h0EbClSfx6SJiHGmOuLiX8nA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                />
+              </div>
+
+              <div class="video-details flex flex-col gap-y-2">
+                <p class="font-semibold text-[#171717]">
+                  Building a Winning UX Strategy Using the Kano Model
+                </p>
+                <div class="user-profile flex gap-x-2">
+                  <h3 class="text-[#171717B2] text-[14px] font-medium">
+                    Awlad Hossain
+                  </h3>
+                  <img
+                    src="./imgs/verified.png"
+                    alt=""
+                    class="verified-icon w-5 h-5"
+                  />
+                </div>
+                <p class="views text-[#171717B2] text-[14px] font-medium">
+                  91K views
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./app.js"></script>
   </body>
