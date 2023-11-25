@@ -1,10 +1,15 @@
 // All the elements I need
+const mainSection = document.querySelector("#main-area");
+const headerSection = document.querySelector("#header-section");
+const videoSection = document.querySelector("#video-section");
+const blogSection = document.querySelector("#blog-section");
 const categorySection = document.querySelector(".cate-container");
 const videoContentArea = document.querySelector(".video-content-area");
-const videoSection = document.querySelector("#video-section");
 const videoNotFound = document.querySelector(".video-not-found");
 const loader = document.querySelector(".loader");
 const sortBtn = document.querySelector(".sort-button");
+const blogBtn = document.querySelector(".blog-btn");
+const blogCloseBtn = document.querySelector(".blog-close-btn");
 
 let videoStore;
 
@@ -263,6 +268,36 @@ sortBtn.addEventListener("click", (e) => {
     updatedStore = sortDescending(videoStore);
   }
   renderVideoContent(updatedStore, "sortState");
+});
+
+// Blog page
+blogBtn.addEventListener("click", () => {
+  mainSection.childNodes.forEach((child) => {
+    if (
+      child != headerSection &&
+      child != blogSection &&
+      child.nodeType == Node.ELEMENT_NODE
+    ) {
+      child.style.display = "none";
+    } else {
+      if (child.nodeType == Node.ELEMENT_NODE) {
+        child.style.display = "";
+      }
+    }
+  });
+});
+
+blogCloseBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  mainSection.childNodes.forEach((child) => {
+    if (child == blogSection && child.nodeType == Node.ELEMENT_NODE) {
+      child.style.display = "none";
+    } else {
+      if (child.nodeType == Node.ELEMENT_NODE) {
+        child.style.display = "";
+      }
+    }
+  });
 });
 
 loadCategories();

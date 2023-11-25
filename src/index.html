@@ -13,9 +13,10 @@
     <title>Ph Tube</title>
   </head>
   <body>
-    <main>
+    <main id="main-area">
       <!-- Header -->
       <header
+        id="header-section"
         class="lg:max-w-7xl max-w-full py-5 lg:mx-auto mx-2 border-b border-[#17171733]"
       >
         <nav
@@ -37,7 +38,7 @@
             </button>
           </div>
           <div>
-            <button class="sort-button default-btn bg-[#FF1F3D] text-white">
+            <button class="blog-btn default-btn bg-[#FF1F3D] text-white">
               Blog
             </button>
           </div>
@@ -62,6 +63,106 @@
           class="video-content-area grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-6 lg:max-w-7xl max-w-full lg:mx-auto mx-2 my-10"
         >
           <!-- Single cards-->
+        </div>
+      </section>
+
+      <!-- Blogs -->
+      <section id="blog-section">
+        <div
+          class="flex justify-between items-center lg:max-w-7xl max-w-full lg:mx-auto mx-2 my-10"
+        >
+          <h1 class="text-4xl my-10 text-red-500 font-semibold">Blogs</h1>
+          <button class="blog-close-btn btn btn-circle btn-outline">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="blog-container font-mono flex flex-col gap-y-10 lg:max-w-7xl max-w-full lg:mx-auto mx-2 my-10"
+        >
+          <div class="collapse collapse-plus bg-base-100 shadow-lg border-2">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-2xl font-bold">
+              Discuss the scope of var, let, and const
+            </div>
+
+            <div class="collapse-content mx-4">
+              <ul class="text-lg list-disc text-gray-500">
+                <li>
+                  Var : Var declared in the Global scope and can be from access
+                  anywhere from the app. Also value can be changed.
+                </li>
+                <li>
+                  Let : Let is blocked scope that means it can't be access from
+                  outer scope but you can still re-assign the value.
+                </li>
+                <li>
+                  Const : This is the most used variable. Because it solves the
+                  both global scope problem and re-assign issue.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-100 shadow-lg border-2">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-2xl font-bold">
+              Tell us the use cases of null and undefined
+            </div>
+
+            <div class="collapse-content mx-4">
+              <ul class="text-lg list-disc text-gray-500">
+                <li>
+                  Null : Null represents the intentional absence of a value and
+                  Null is used as a placeholder value for missing data. Also
+                  Null is often used in database queries to represent NULL
+                  values.
+                </li>
+                <li>
+                  Undefined : Undefined is the default value for uninitialized
+                  variables and Undefined is returned when trying to access a
+                  non-existent property of an object. Also Undefined indicates
+                  that a value is not yet known or available.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-100 shadow-lg border-2">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-2xl font-bold">
+              What do you mean by REST API?
+            </div>
+
+            <div class="collapse-content mx-4">
+              <ul class="text-lg list-disc text-gray-500">
+                <li>
+                  REST API stands for Representational State Transfer API. It is
+                  a software architectural style for designing web services.
+                  REST APIs are stateless,
+                </li>
+                <li>
+                  This means that clients use HTTP methods, such as GET, POST,
+                  PUT, and DELETE, to interact with resources.
+                </li>
+                <li>Stateless: This makes them easy to scale and efficient.</li>
+                <li>
+                  Cacheable: This means that responses can be cached, which can
+                  improve performance.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
